@@ -1,0 +1,13 @@
+server:
+  port: 9050
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: Lucifer@23
+    url: jdbc:mysql://localhost:3306/sporty_shoes
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
