@@ -1,7 +1,6 @@
 package com.sportyshoes.service;
 
-import java.sql.Date;
-import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
@@ -33,7 +32,8 @@ public class PurchaseReportServiceImp implements PurchaseReportService {
 		PurchaseReport pReport = new PurchaseReport();
 		pReport.setShoe(shoe);
 		pReport.setPurchasedBy(user);
-		pReport.setDOP(null);
+		pReport.setDOP(new Date());
+		pReport.setCategory(pRModel.getCategory());
 		return reportRepository.save(pReport);
 	}
 
@@ -59,6 +59,10 @@ public class PurchaseReportServiceImp implements PurchaseReportService {
 			Shoe shoe = shoeRepository.findById(pReport.getShoeId()).get();
 			oldPurchaseReport.setShoe(shoe);
 		}
+		if (Objects.nonNull(pReport.getCategory())) {
+			oldPurchaseReport.setCategory(pReport.getCategory());
+		}
+
 		reportRepository.save(oldPurchaseReport);
 		return oldPurchaseReport;
 	}
@@ -70,8 +74,12 @@ public class PurchaseReportServiceImp implements PurchaseReportService {
 
 	@Override
 	public List<PurchaseReport> getAllPRByCategory(String category) {
-		// TODO Auto-generated method stub
-		return null;
+		return reportRepository.findByCategory(category);
+	}
+
+	@Override
+	public List<PurchaseReport> getAllPRByDop(Date date) {
+		return reportRepository.findBydOP(date);
 	}
 
 }

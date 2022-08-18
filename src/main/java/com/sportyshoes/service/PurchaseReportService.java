@@ -1,10 +1,11 @@
 package com.sportyshoes.service;
 
+import java.util.Date;
 import java.util.List;
 
 import com.sportyshoes.model.PurchaseReport;
 import com.sportyshoes.model.PurchaseReportModel;
-import com.sportyshoes.model.User;
+
 
 public interface PurchaseReportService {
 
@@ -19,5 +20,7 @@ public interface PurchaseReportService {
 	List<PurchaseReport> getAllPR();
 
 	List<PurchaseReport> getAllPRByCategory(String category);
+
+	List<PurchaseReport> getAllPRByDop(Date date);
 
 }

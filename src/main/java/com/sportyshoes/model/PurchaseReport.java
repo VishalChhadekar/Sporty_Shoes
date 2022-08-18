@@ -1,6 +1,6 @@
 package com.sportyshoes.model;
 
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -25,6 +25,7 @@ public class PurchaseReport {
 	@GeneratedValue(strategy = GenerationType.IDENTITY, generator = "pr_sequence")
 	private Long pr_id;
 	private Date dOP;
+	private String category;
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "user_id", referencedColumnName = "userId")
 	private User purchasedBy;

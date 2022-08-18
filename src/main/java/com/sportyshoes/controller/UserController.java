@@ -28,8 +28,12 @@ public class UserController {
 
 	// FIND USER BY ID
 	@GetMapping("/{id}")
-	public User getUserById(@PathVariable Long id) {
-		return userService.getUserById(id);
+	public User getUserById(@PathVariable Long id) throws Exception {
+		User user = userService.getUserById(id);
+		if (user == null) {
+			throw new Error("No User is present with this Id");
+		}
+		return user;
 	}
 
 	// DELETE USER
