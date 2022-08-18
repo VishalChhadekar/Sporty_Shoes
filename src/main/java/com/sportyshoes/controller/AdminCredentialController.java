@@ -21,14 +21,14 @@ public class AdminCredentialController {
 
 	// ADD ADMIN
 	@PostMapping("singup")
-	public String singUp(@RequestBody AppUserModel appUserModel) {
+	public String singUp(@RequestBody AppUserModel appUserModel) throws Exception {
 		cdS.adminSingUp(appUserModel);
 		return "SingUp successfull!";
 	}
 
 	// UPDATE PASSWORD
 	@PutMapping("/updatePassword/{id}")
-	public AppUser updatePassword(@RequestBody AppUserModel appUserModel, @PathVariable Long id) {
+	public AppUser updatePassword(@RequestBody AppUserModel appUserModel, @PathVariable Long id) throws Exception {
 		return cdS.updatePassword(appUserModel, id);
 	}
 

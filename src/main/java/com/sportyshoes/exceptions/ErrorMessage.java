@@ -1,4 +1,4 @@
-package com.sportyshoes.entity;
+package com.sportyshoes.exceptions;
 
 import org.springframework.http.HttpStatus;
 
