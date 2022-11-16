@@ -3,6 +3,7 @@ package com.sportyshoes.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -27,18 +28,28 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
         provider.setPasswordEncoder(new BCryptPasswordEncoder());
         return  provider;
     }
+    
+	@Override
+	protected AuthenticationManager authenticationManager() throws Exception {
+		return super.authenticationManager();
+	}
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable().authorizeRequests()     
-                .antMatchers("/user")
-                .hasAnyRole("USER","ADMIN" )
-                .antMatchers("/admin")
-                .hasRole("ADMIN")
+        http.csrf().disable()
+        .authorizeRequests()     
+//                .antMatchers("/user")
+//                .hasAnyRole("USER","ADMIN" )
+//                .antMatchers("/admin")
+//                .hasRole("ADMIN")
                 .antMatchers("/")
                 .permitAll()
-                .anyRequest()
-                .authenticated()
+//                .antMatchers("/v2/api-docs").permitAll()
+//                .antMatchers("/swagger-resources/**").permitAll()
+//                .antMatchers("/swagger-ui/**").permitAll()
+//                .antMatchers("/webjars/**").permitAll()
+//                .anyRequest()
+//                .authenticated()
                 .and()
                 .httpBasic();
     }

@@ -1,0 +1,64 @@
+2022-09-27 12:42:42.390  INFO 14472 --- [main] com.sportyshoes.SportyShoesApplication   : Starting SportyShoesApplication using Java 17.0.3 on LAPTOP-4O2VL3H5 with PID 14472 (C:\Users\vishal chhadekar\Desktop\Simpli_Learn\Java Full Stack Development\Course3_DevOps\Spring Framework\WorkSpace\Sporty_Shoes\target\classes started by vishal chhadekar in C:\Users\vishal chhadekar\Desktop\Simpli_Learn\Java Full Stack Development\Course3_DevOps\Spring Framework\WorkSpace\Sporty_Shoes)
+2022-09-27 12:42:42.402  INFO 14472 --- [main] com.sportyshoes.SportyShoesApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-09-27 12:42:45.822  INFO 14472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-27 12:42:46.028  INFO 14472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 166 ms. Found 4 JPA repository interfaces.
+2022-09-27 12:42:47.482  INFO 14472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9050 (http)
+2022-09-27 12:42:47.502  INFO 14472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-27 12:42:47.502  INFO 14472 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-27 12:42:47.742  INFO 14472 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-27 12:42:47.742  INFO 14472 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5190 ms
+2022-09-27 12:42:48.104  INFO 14472 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-27 12:42:48.319  INFO 14472 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-27 12:42:48.652  INFO 14472 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-27 12:42:48.815  INFO 14472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-27 12:42:49.483  INFO 14472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-27 12:42:49.608  INFO 14472 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-09-27 12:42:52.838  INFO 14472 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-27 12:42:52.855  INFO 14472 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-27 12:42:53.014  WARN 14472 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-27 12:42:54.682  INFO 14472 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-27 12:42:55.117  INFO 14472 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7ab8c972, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76cad511, org.springframework.security.web.context.SecurityContextPersistenceFilter@38eafdab, org.springframework.security.web.header.HeaderWriterFilter@3507200d, org.springframework.security.web.authentication.logout.LogoutFilter@1a67bcaf, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1978eab7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d86b636, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74120029, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ff52a71, org.springframework.security.web.session.SessionManagementFilter@4df8443f, org.springframework.security.web.access.ExceptionTranslationFilter@3f31cf8f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@510e0dd2]
+2022-09-27 12:42:55.724  INFO 14472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9050 (http) with context path ''
+2022-09-27 12:42:55.726  INFO 14472 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-09-27 12:42:55.765  INFO 14472 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-09-27 12:42:55.854  INFO 14472 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-09-27 12:42:56.240  INFO 14472 --- [main] com.sportyshoes.SportyShoesApplication   : Started SportyShoesApplication in 15.095 seconds (JVM running for 16.778)
+2022-09-27 12:43:39.340  INFO 14472 --- [http-nio-9050-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-27 12:43:39.340  INFO 14472 --- [http-nio-9050-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-27 12:43:39.344  INFO 14472 --- [http-nio-9050-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-09-27 12:52:20.985  INFO 14472 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-09-27 12:52:21.138  INFO 14472 --- [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-27 12:52:21.141  INFO 14472 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-27 12:52:21.158  INFO 14472 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-27 13:06:27.576  INFO 3148 --- [main] com.sportyshoes.SportyShoesApplication   : Starting SportyShoesApplication using Java 17.0.3 on LAPTOP-4O2VL3H5 with PID 3148 (C:\Users\vishal chhadekar\Desktop\Simpli_Learn\Java Full Stack Development\Course3_DevOps\Spring Framework\WorkSpace\Sporty_Shoes\target\classes started by vishal chhadekar in C:\Users\vishal chhadekar\Desktop\Simpli_Learn\Java Full Stack Development\Course3_DevOps\Spring Framework\WorkSpace\Sporty_Shoes)
+2022-09-27 13:06:27.579  INFO 3148 --- [main] com.sportyshoes.SportyShoesApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-09-27 13:06:28.579  INFO 3148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-27 13:06:28.660  INFO 3148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 4 JPA repository interfaces.
+2022-09-27 13:06:29.187  INFO 3148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9050 (http)
+2022-09-27 13:06:29.196  INFO 3148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-27 13:06:29.196  INFO 3148 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-27 13:06:29.305  INFO 3148 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-27 13:06:29.305  INFO 3148 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1683 ms
+2022-09-27 13:06:29.509  INFO 3148 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-27 13:06:29.596  INFO 3148 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-27 13:06:29.868  INFO 3148 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-27 13:06:30.049  INFO 3148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-27 13:06:30.339  INFO 3148 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-27 13:06:30.391  INFO 3148 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-09-27 13:06:31.277  INFO 3148 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-27 13:06:31.285  INFO 3148 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-27 13:06:31.328  WARN 3148 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-27 13:06:32.062  INFO 3148 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-27 13:06:32.204  INFO 3148 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@30b075b9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@510e0dd2, org.springframework.security.web.context.SecurityContextPersistenceFilter@1db7a4ae, org.springframework.security.web.header.HeaderWriterFilter@48543f11, org.springframework.security.web.authentication.logout.LogoutFilter@61e4a072, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@34f2d3a6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6764201e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e8f3b76, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54a98358, org.springframework.security.web.session.SessionManagementFilter@38affd02, org.springframework.security.web.access.ExceptionTranslationFilter@52f71d2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@64821706]
+2022-09-27 13:06:32.729  INFO 3148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9050 (http) with context path ''
+2022-09-27 13:06:32.730  INFO 3148 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-09-27 13:06:32.753  INFO 3148 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-09-27 13:06:32.796  INFO 3148 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-09-27 13:06:33.021  INFO 3148 --- [main] com.sportyshoes.SportyShoesApplication   : Started SportyShoesApplication in 5.867 seconds (JVM running for 6.574)
+2022-09-27 13:06:58.907  INFO 3148 --- [http-nio-9050-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-27 13:06:58.907  INFO 3148 --- [http-nio-9050-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-27 13:06:58.915  INFO 3148 --- [http-nio-9050-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-09-27 15:17:51.433  INFO 3148 --- [RMI TCP Connection(137)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-09-27 15:17:52.261  INFO 3148 --- [RMI TCP Connection(137)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-27 15:17:52.332  INFO 3148 --- [RMI TCP Connection(137)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-27 15:17:52.414  INFO 3148 --- [RMI TCP Connection(137)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
